@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-thing">
+        <header>
+            <h2 onmouseover="style.color='#b609ad'"
+            onmouseout="style.color='black'">♂♂♂♂</h2>
+            
+              
+            <div>
+                <button title="This manly sample piano created by ♂Mike♂" class="tooltip">?</button>
+               
+               </div>
+            <div class="slidecontainer">
+                <span onmouseover="style.color='#b609ad'"
+                onmouseout="style.color='#1C1C1C'">Volume</span>
+                    <input title="Volume control" type="range" min="0" max="1" value="50" class="slider" step="any" id="myRange" >
+              </div>
+              <div class="keys-checkbox">
+                <span onmouseover="style.color='#b609ad'"
+                onmouseout="style.color='#1C1C1C'">Show Keys</span> <input title="Show/Hide" type="checkbox" checked>
+              </div>
+              <audio id="myAudio" controls>
+                <source src="PlayerAudio/174DRUMS.wav" type="audio/wav" >
+                <source src="" type="audio/mpeg">
+            </audio>
+              
+        </header>
+       
+        
+        <!-- кнопки показать/спрятать аудиоплеер -->
+         <!-- <div>
+            <button id="showb" onclick="enableControls()" type="button">Show</button>
+            <button id="hideb"  onclick="disableControls()" type="button">Hide</button>
+            
+</div>  -->
+    
+<div class="drumpad">
+    
+    <button id="d1" class="a button">a</button>
+    <button id="d2" class="` button">`</button>
+    <button id="d3" class="f button">f</button>
+    <button id="d4" class="i button">i</button>
+    <button id="d5" class="o button">o</button>
+    <button id="d6" class="p button">p</button>
+    <button id="d7" class="k button">k</button>
+    <button id="d8" class="l button">l</button>
+    
+</div>
+
+    <div>
+        <ul class="piano-keys">
+            <li id="k1" class="white key" data-key="z"><span>z</span></li>
+            <li id="k2" class="black key" data-key="s"><span>s</span></li>
+            <li id="k3" class="white key" data-key="x"><span>x</span></li>
+            <li id="k4" class="black key" data-key="d"><span>d</span></li>
+            <li id="k5" class="white key" data-key="c"><span>c</span></li>
+            <li id="k6" class="white key" data-key="v"><span>v</span></li>
+            <li id="k7" class="black key" data-key="g"><span>g</span></li>
+            <li id="k8" class="white key" data-key="b"><span>b</span></li>
+            <li id="k9" class="black key" data-key="h"><span>h</span></li>
+            <li id="k10" class="white key" data-key="n"><span>n</span></li>
+            <li id="k11" class="black key" data-key="j"><span>j</span></li>
+            <li id="k12" class="white key" data-key="m"><span>m</span></li>
+            <li id="k13" class="white key" data-key="q"><span>q</span></li>
+            <li id="k14" class="black key" data-key="2"><span>2</span></li>
+            <li id="k15" class="white key" data-key="w"><span>w</span></li>
+            <li id="k16" class="black key" data-key="3"><span>3</span></li>
+            <li id="k17" class="white key" data-key="e"><span>e</span></li>
+            <li id="k18" class="white key" data-key="r"><span>r</span></li>
+            <li id="k19" class="black key" data-key="5"><span>5</span></li>
+            <li id="k20" class="white key" data-key="t"><span>t</span></li>
+            <li id="k21" class="black key" data-key="6"><span>6</span></li>
+            <li id="k22" class="white key" data-key="y"><span>y</span></li>
+            <li id="k23" class="black key" data-key="7"><span>7</span></li>
+            <li id="k24" class="white key" data-key="u"><span>u</span></li>
+            <!-- <li class="white key" data-key="C"><span>C</span></li>
+            <li class="black key" data-key="C#"><span>C#</span></li>
+            <li class="white key" data-key="D"><span>D</span></li>
+            <li class="black key" data-key="D#"><span>D#</span></li>
+            <li class="white key" data-key="E"><span>E</span></li>
+            <li class="white key" data-key="F"><span>F</span></li>
+            <li class="black key" data-key="F#"><span>F#</span></li>
+            <li class="white key" data-key="G"><span>G</span></li>
+            <li class="black key" data-key="G#"><span>G#</span></li>
+            <li class="white key" data-key="A"><span>A</span></li>
+            <li class="black key" data-key="A#"><span>A#</span></li>
+            <li class="white key" data-key="B"><span>B</span></li> -->
+                        
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

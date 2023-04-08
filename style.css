@@ -1,0 +1,477 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /*база, делает все элементы по центру + цвет заднего фона + шрифт*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #b9fcd8;
+    /* background-image: url("Pics/picc2.jpg"); */
+    /* background-repeat: no-repeat, repeat; */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.main-thing {
+    /* ширина, высота, цвет рамки */
+    width: 1000px;
+    border-radius: 20px;
+    padding: 25px 40px;
+    background: #b609ad;
+    background-image: url("Pics/picc1.jpg");
+    /* background-repeat: no-repeat, repeat; */
+    background-size: cover;
+    border: 3px solid #000000;
+}
+
+.main-thing header {
+    color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    left: 44px;
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+#myAudio  {
+    position: relative;
+  
+    /* left: 350px; */
+    /* width: 250px; */
+    /* height: 100px; */
+}
+
+header .slidecontainer {
+    display: flex;
+    align-items: center;
+}
+
+.tooltip {
+    /* display: flex;
+    justify-content: left; */
+    
+    border: none;
+    color: #D4D4D2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    background-color: #141414; 
+    border: 2px solid #D4D4D2;
+    border-radius: 46%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+    }
+
+    
+
+   
+
+    .tooltip:hover {
+        background-color: #ff00d4;
+        color: #1C1C1C;
+        border: 2px solid #ff00d4;
+      }
+
+     
+.slidecontainer input {
+    outline: none;
+    accent-color: #ff00d4;
+    /* text-align: center; */
+}
+
+
+
+header .slidecontainer span {
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.20rem;
+    
+}
+
+header .keys-checkbox {
+    font-weight: 500;
+    margin-bottom: 7px;
+    margin-right: 15px;
+    font-size: 1.20rem;
+}
+
+
+.keys-checkbox input{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 25px;
+    position: relative;
+    appearance: none;
+    border-radius: 20px;
+    background: #D4D4D2;
+    margin-bottom: -5px;
+    
+}
+
+.keys-checkbox input::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 5px;
+    border-radius: inherit;
+    position: absolute;
+    background: #505050;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before {
+    left: 35px;
+    background: #ff00d4;
+}
+
+.keys-checkbox input:active{
+    box-shadow: inset 5px 5px 50px rgba(255, 255, 255, 0.822), inset
+    -5px -5px 10px rgba(255, 255, 255, 0.904);
+    color: rgba(234, 234, 235, 0.973);
+    
+}
+
+#showb, #hideb{
+    
+    position: relative;
+   bottom: 15px;
+   left: 856px;
+  background-color: #fcfcfc;
+  border: none;
+    color: #1C1C1C;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12%;
+ 
+  /* border: 2px solid #1c1c1c; */
+}
+
+#showb:hover, #hideb:hover{
+    background-color: #ff00d4; 
+
+}
+
+/* драмка -----------------------------*/
+
+#d1 {
+    background-image: url("Pics/1.jpg");
+    background-size: cover;
+}
+  
+#d2 {
+    background-image: url("Pics/2.jpg");
+    background-size: cover;
+}
+  
+#d3 {
+    background-image: url("Pics/3.jpg");
+    background-size: cover;
+}
+  
+#d4 {
+    background-image: url("Pics/4.jpg");
+    background-size: cover;
+}
+  
+#d5 {
+    background-image: url("Pics/5.jpg");
+    background-size: cover;
+}
+  
+#d6 {
+    background-image: url("Pics/6.jpg");
+    background-size: cover;
+}
+  
+#d7 {
+    background-image: url("Pics/7.png");
+    background-size: cover;
+}
+
+#d8 {
+    background-image: url("Pics/8.jpg");
+    background-size: cover;
+}
+
+.drumpad {
+    margin: 5% auto;
+}
+ 
+
+
+.animation {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+  
+.button {
+    outline: none;
+    border: 10px solid #1C1C1C;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -1000px;
+    margin: -100px 0px -100px 0;
+    /* padding: 40px 0 -40px 20%; */
+    line-height: 2;
+    font-weight: 900;
+    color: #ff00d4;
+    /* text-shadow: 3px 0 #DBEDF3; */
+    border-radius: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 20px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+/* #showb:active {
+    box-shadow: inset 5px 5px 50px rgba(255, 255, 255, 0.822), inset
+    -5px -5px 10px rgba(255, 255, 255, 0.904);
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#hideb:active {
+    box-shadow: inset 5px 5px 50px rgba(255, 255, 255, 0.822), inset
+    -5px -5px 10px rgba(255, 255, 255, 0.904);
+    color: rgba(234, 234, 235, 0.973);
+} */
+
+.piano-keys .key{
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    color: #ff00d4;
+    position: relative;
+    
+}
+
+.piano-keys {
+    display: flex;
+    margin-top: 40px;
+}
+
+/* черные клавиши  */
+.piano-keys .black {
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    /* border: 1px solid #000;  */
+    background: #1C1C1C;
+}
+
+.piano-keys .black.active {
+    box-shadow: inset 5px 5px 20px rgba(255, 149, 0), inset
+    -5px -5px 200px #FF9500;
+    color: rgba(234, 234, 235, 0.973);
+    
+    /* box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2); */
+    /* background: linear-gradient(to bottom, #fff 0%, #eee 100%; */
+
+}
+
+.piano-keys .white {
+     width: 70px;
+     height: 230px;
+     /* border-radius: 8px; */
+     border: 1px solid #000;
+     background: #fcfcfc;
+}
+
+.piano-keys .white.active {
+    box-shadow: inset 5px 5px 20px rgba(255, 149, 0), inset
+    -5px -5px 200px #ff8800;
+    color: rgba(234, 234, 235, 0.973);
+    /* box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2); 
+     background: linear-gradient(to bottom, #fff 0%, #eee 100%); */
+
+}
+
+/* делаем все ноты разноцветными по нажатию клавиши */
+#k1.active {
+    box-shadow: inset 5px 5px 20px rgb(230, 11, 11), inset
+    -5px -5px 200px #ff0018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k2.active {
+    box-shadow: inset 5px 5px 20px rgb(230, 11, 11), inset
+    -5px -5px 200px #ff0018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k3.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 165, 44), inset
+    -5px -5px 200px #ffa52c;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k4.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 165, 44), inset
+    -5px -5px 200px #FFA52C;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k5.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 255, 65), inset
+    -5px -5px 200px #FFFF41;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k6.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 128, 24), inset
+    -5px -5px 200px #008018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k7.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 255, 65), inset
+    -5px -5px 200px #FFFF41;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k8.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 0, 249), inset
+    -5px -5px 200px #0000F9;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k9.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 128, 24), inset
+    -5px -5px 200px #008018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k10.active {
+    box-shadow: inset 5px 5px 20px rgb(134, 0, 125), inset
+    -5px -5px 200px #86007D;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k11.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 0, 249), inset
+    -5px -5px 200px #0000F9;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k12.active {
+    box-shadow: inset 5px 5px 20px rgb(236, 48, 173), inset
+    -5px -5px 200px #ec30ad;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k13.active {
+    box-shadow: inset 5px 5px 20px rgb(230, 11, 11), inset
+    -5px -5px 200px #ff0018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k14.active {
+    box-shadow: inset 5px 5px 20px rgb(230, 11, 11), inset
+    -5px -5px 200px #ff0018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k15.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 165, 44), inset
+    -5px -5px 200px #ffa52c;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k16.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 165, 44), inset
+    -5px -5px 200px #FFA52C;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k17.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 255, 65), inset
+    -5px -5px 200px #FFFF41;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k18.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 128, 24), inset
+    -5px -5px 200px #008018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k19.active {
+    box-shadow: inset 5px 5px 20px rgb(255, 255, 65), inset
+    -5px -5px 200px #FFFF41;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k20.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 0, 249), inset
+    -5px -5px 200px #0000F9;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k21.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 128, 24), inset
+    -5px -5px 200px #008018;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k22.active {
+    box-shadow: inset 5px 5px 20px rgb(134, 0, 125), inset
+    -5px -5px 200px #86007D;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k23.active {
+    box-shadow: inset 5px 5px 20px rgb(0, 0, 249), inset
+    -5px -5px 200px #0000F9;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+#k24.active {
+    box-shadow: inset 5px 5px 20px rgb(236, 48, 173), inset
+    -5px -5px 200px #ec30ad;
+    color: rgba(234, 234, 235, 0.973);
+}
+
+/* размер, название клавиш */
+.piano-keys span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* спрятать названия клавиш */
+.piano-keys .key.hide span {
+    display: none;
+}
